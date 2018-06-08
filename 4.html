@@ -1,9 +1,9 @@
 <html>
 <body>
 <script>
-func Calculator()
+function Calc()
 {
-	this.read = func()
+	this.read = function()
 	{
 		this.Val1 = +prompt('Введите первое число', '');
 		this.Val2 = +prompt('Введите второе число', '');
@@ -17,7 +17,7 @@ func Calculator()
 		return this.Val1 * this.Val2;
 	};
 }
-var calculator = new Calculator();
+var calculator = new Calc();
 calculator.read();
 alert("Сумма введенных чисел: " + calculator.sum());
 alert("Произведение введенных чисел: " + calculator.mul());
