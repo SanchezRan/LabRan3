@@ -1,24 +1,24 @@
 <html>
 <body>
 <script>
-func sum(a)
+function sum1(a)
 {
 	var nNum = a;
-	func f(b)
+	function f(b)
 	{
 		nNum += b;
 		return f;
 	}
-	f.toString = func()
+	f.toString = function()
 	{
 		return nNum;
 	};
 	return f;
 }
-alert( sum(1)(2) );
-alert( sum(5)(-1)(2) );
-alert( sum(6)(-1)(-2)(-3) );
-alert( sum(0)(1)(2)(3)(4)(5) );
+alert( sum1(1)(2) );
+alert( sum1(5)(-1)(2) );
+alert( sum1(6)(-1)(-2)(-3) );
+alert( sum1(0)(1)(2)(3)(4)(5) );
 </script>
 </body>
 </html>
